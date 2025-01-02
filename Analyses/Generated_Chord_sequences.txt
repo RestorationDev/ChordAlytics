@@ -1,0 +1,23 @@
+The following 10 sample generated chord sequences are length 30. Using eigenvalue centrality calculations, the central chord string was 'FCG' which is used to start our sequence.
+
+
+    
+    1.	['FCG', 'GFC', 'AmGF', 'FAmG', 'GFAm', 'AmGF', 'GAmG', 'FGAm', 'AmFG', 'GAmF', 'FGAm', 'CFG', 'CCF', 'CCC', 'FCC', 'FFC', 'AmFF', 'AmAmF', 'FAmAm', 'AmAmC', 'AmFAm', 'CGC', 'GGF', 'GAmC', 'FAmC', 'AmCAm', 'GAmC', 'CGC', 'FAmC', 'AmAmC', 'AmFAm']
+	
+    2.	['FCG', 'GFC', 'CGF', 'GAmC', 'AmCF', 'AmFAm', 'FCAm', 'FCAm', 'AmCF', 'AmCG', 'GGF', 'AmCF', 'AmGAm', 'AmCAm', 'AmCF', 'CFC', 'AmCG', 'FCAm', 'GGF', 'AmFAm', 'AmCG', 'AmCF', 'AmCG', 'AmGAm', 'GAmC', 'AmCF', 'FAmC', 'AmGAm', 'CGC', 'FCAm', 'GGF']
+	
+    3.	['FCG', 'AmFC', 'FAmF', 'FFAm', 'CFF', 'CCF', 'CCC', 'CCC', 'FCC', 'FFC', 'AmFF', 'AmAmF', 'FAmAm', 'FFAm', 'CFF', 'CCF', 'AmCF', 'FCAm', 'GGF', 'AmGAm', 'AmCF', 'GGF', 'AmFAm', 'AmCF', 'FAmC', 'CFC', 'FCAm', 'AmCG', 'AmAmC', 'AmCAm', 'GGF']
+	
+    4.	['FCG', 'AmFC', 'FAmF', 'FFAm', 'CFF', 'GCF', 'CGC', 'AmGAm', 'AmCAm', 'FAmC', 'FCAm', 'AmCAm', 'CGC', 'AmAmC', 'CGC', 'AmCG', 'FAmC', 'AmCG', 'AmCG', 'AmAmC', 'AmCAm', 'AmCAm', 'AmCG', 'AmGAm', 'FAmC', 'FCAm', 'AmAmC', 'AmCG', 'GAmC', 'AmGAm', 'AmFAm']
+	
+    5.	['FCG', 'AmFC', 'FAmF', 'FFAm', 'CFF', 'GCF', 'FCAm', 'FCAm', 'AmFAm', 'GAmC', 'AmFAm', 'FCAm', 'AmFAm', 'AmAmC', 'GAmC', 'CGC', 'FCAm', 'GAmC', 'CGC', 'FAmC', 'GGF', 'AmGAm', 'GAmC', 'AmGAm', 'GAmC', 'FCAm', 'AmGAm', 'AmAmC', 'AmAmC', 'FAmC', 'AmCAm']
+	
+    6.	['FCG', 'AmFC', 'FCAm', 'AmCF', 'AmCAm', 'CFC', 'AmCF', 'FAmC', 'AmCF', 'GGF', 'AmFAm', 'AmCAm', 'GAmC', 'CGC', 'FCAm', 'GGF', 'CFC', 'AmGAm', 'AmAmC', 'AmGAm', 'AmFAm', 'FCAm', 'GAmC', 'AmAmC', 'CGC', 'CGC', 'AmCAm', 'FCAm', 'FAmC', 'GGF', 'AmAmC']
+	
+    7.	['FCG', 'AmFC', 'FAmF', 'CGC', 'CFC', 'GGF', 'AmCF', 'GGF', 'AmCAm', 'AmGAm', 'AmFAm', 'AmCF', 'FAmC', 'AmGAm', 'GGF', 'AmCAm', 'AmAmC', 'GGF', 'AmAmC', 'CFC', 'GGF', 'FAmC', 'AmAmC', 'AmCAm', 'CFC', 'AmCAm', 'AmCG', 'FAmC', 'FAmC', 'AmAmC', 'AmCAm']
+	
+    8.	['FCG', 'AmFC', 'GAmF', 'FGAm', 'CFG', 'CGC', 'AmCAm', 'CGC', 'AmCG', 'AmCF', 'AmAmC', 'AmFAm', 'GGF', 'CFC', 'CGC', 'AmCF', 'AmCF', 'CFC', 'AmAmC', 'CGC', 'GAmC', 'AmGAm', 'CFC', 'CGC', 'AmGAm', 'AmGAm', 'AmFAm', 'FAmC', 'AmGAm', 'CFC', 'AmGAm']
+	
+    9.	['FCG', 'AmFC', 'FAmF', 'FFAm', 'CFF', 'CFC', 'FCAm', 'FCAm', 'GAmC', 'AmCF', 'AmAmC', 'AmCG', 'FAmC', 'AmGAm', 'FCAm', 'GAmC', 'FCAm', 'FCAm', 'AmFAm', 'AmCAm', 'AmCF', 'FAmC', 'AmCAm', 'GAmC', 'FCAm', 'GAmC', 'AmCF', 'GAmC', 'GGF', 'GAmC', 'FAmC']
+	
+    10.	['FCG', 'AmFC', 'FAmF', 'FFAm', 'CFF', 'CFC', 'GAmC', 'CGC', 'AmGAm', 'AmFAm', 'AmFAm', 'AmAmC', 'AmCAm', 'AmGAm', 'FAmC', 'CGC', 'AmGAm', 'CFC', 'FAmC', 'AmCF', 'FCAm', 'AmFAm', 'CFC', 'AmCG', 'GGF', 'AmCF', 'CFC', 'FCAm', 'CGC', 'CFC', 'FAmC']
