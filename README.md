@@ -5,7 +5,7 @@ ChordAlytics is a data-driven project that analyzes and generates chord progress
 # Features
 
 	•	Chord Progression Analysis: Uses Markov Chains to model the *probability of chord transitions*.
-	•	Graph-Based Visualizations: *Graph song representations*, where nodes correspond to chords, and edges represent transitions.
+	•	Graph-Based Visualizations: *Graph song representations*, where nodes correspond to chords, and undirected edges represent transitions.
 	•	Clustering for Song Similarity: Graph *clustering techniques* for song similarities (Wasserstein).
 	•	Eigenvalue Centrality: Ranks chords by their importance within progression paths, identifying central chords.
 	•	Data Preprocessing: Parses and organizes *raw chord data into structured graph* representations for analysis, and 3 chord strings to offer more insight for a progression.
@@ -13,7 +13,7 @@ ChordAlytics is a data-driven project that analyzes and generates chord progress
 
  # Technical Approach
 	1.	Cleaning and Structuring
-	•	Parsed *thousands* of chord progressions from songs.
+	•	Parsed *thousands of chord progressions from songs.
 	•	Organized the data into graph structures where nodes represent chords.
 	2.	Mathematical Modeling
 	•	Markov Chains: Modeled chord transitions to predict future progressions.
