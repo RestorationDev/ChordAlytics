@@ -12,7 +12,7 @@ ChordAlytics is a data-driven project that analyzes and generates chord progress
 	•	Generative Capabilities: *Generates realistic chord sequences* based on observed patterns, aiding in music composition and analysis.
 
  # Technical Approach
-	1.	Cleaning and Structuring
+	1.	Cleaning and Structuring data
 	•	Parsed *thousands of chord progressions from songs. Parsed in an arrangement of 3 chord sequences for contextual information about each chord
 	•	Organized the data into graph structures where nodes represent chords.
 	2.	Mathematical Modeling
