@@ -1,5 +1,5 @@
 # ChordAlytics
- 
+
 ChordAlytics is a data-driven project that analyzes and generates chord progressions through pattens in music datasets. Leveraging Math and DS techniques, this project identifies chord similarities, progression patterns, and other song relationships all while providing interesting visualizations.  
 
 # Features
