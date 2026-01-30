@@ -1,18 +1,11 @@
 import os
+from itertools import product
 import Song_Parser
 import pandas as pd
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-CHORD_POSSIBILITIES = [
-    "CCC", "CCG", "CCF", "CCAm", "CGC", "CGG", "CGF", "CGAm",
-    "CFC", "CFG", "CFF", "CFAm", "CAmC", "CAmG", "CAmF", "CAmAm",
-    "GCC", "GCG", "GCF", "GCAm", "GGC", "GGG", "GGF", "GGAm",
-    "GFC", "GFG", "GFF", "GFAm", "GAmC", "GAmG", "GAmF", "GAmAm",
-    "FCC", "FCG", "FCF", "FCAm", "FGC", "FGG", "FGF", "FGAm",
-    "FFC", "FFG", "FFF", "FFAm", "FAmC", "FAmG", "FAmF", "FAmAm",
-    "AmCC", "AmCG", "AmCF", "AmCAm", "AmGC", "AmGG", "AmGF", "AmGAm",
-    "AmFC", "AmFG", "AmFF", "AmFAm", "AmAmC", "AmAmG", "AmAmF", "AmAmAm"
-]
+CHORDS = ["C", "Am", "G", "F"]
+CHORD_POSSIBILITIES = [a + b + c for a, b, c in product(CHORDS, repeat=3)]
 
 
 def three_chord_arr(chord_sequence_array):
