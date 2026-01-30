@@ -1,10 +1,12 @@
+import os
 from scipy.stats import wasserstein_distance
 from scipy.cluster import hierarchy
 import pandas as pd
 import matplotlib.pyplot as plt
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ADJACENCY_DIR = os.path.join(SCRIPT_DIR, 'Adjacency_Matrices')
 SONG_NAMES = ['All Too Well', 'Baby', 'Yellow', 'Story of My Life', 'Hey Soul Sister', 'Riptide']
-ADJACENCY_DIR = 'Adjacency_Matrices'
 SONG_FILES = [
     'all_too_well.csv', 'baby.csv', 'yellow.csv',
     'story_of_my_life.csv', 'hey_soul_sister.csv', 'riptide.csv'
@@ -19,7 +21,7 @@ def preprocess_matrix(matrix):
 
 
 if __name__ == "__main__":
-    matrices = [pd.read_csv(f'{ADJACENCY_DIR}/{f}', header=None) for f in SONG_FILES]
+    matrices = [pd.read_csv(os.path.join(ADJACENCY_DIR, f), header=None) for f in SONG_FILES]
     preprocessed = [preprocess_matrix(m) for m in matrices]
     n = len(preprocessed)
 

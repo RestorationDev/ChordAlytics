@@ -1,6 +1,8 @@
+import os
 import Song_Parser
 import pandas as pd
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CHORD_POSSIBILITIES = [
     "CCC", "CCG", "CCF", "CCAm", "CGC", "CGG", "CGF", "CGAm",
     "CFC", "CFG", "CFF", "CFAm", "CAmC", "CAmG", "CAmF", "CAmAm",
@@ -33,4 +35,4 @@ def three_chord_arr(chord_sequence_array):
 
 if __name__ == "__main__":
     test_df = three_chord_arr(Song_Parser.chord_sequence).T
-    test_df.to_csv('data_generator_test1.csv', sep='\t', index=False)
+    test_df.to_csv(os.path.join(SCRIPT_DIR, 'data_generator_test1.csv'), sep='\t', index=False)

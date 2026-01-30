@@ -2,8 +2,8 @@ import os
 import pandas as pd
 import numpy as np
 
-FOLDER_PATH = "/Users/kunalkulkarni/Desktop/DEs/Code/Music Project"
-ADJACENCY_DIR = os.path.join(FOLDER_PATH, "Adjacency_Matrices")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ADJACENCY_DIR = os.path.join(SCRIPT_DIR, "Adjacency_Matrices")
 SONG_FILES = {
     'All Too Well': 'all_too_well.csv',
     'Baby': 'baby.csv',

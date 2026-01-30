@@ -2,7 +2,8 @@ import os
 import numpy as np
 import pandas as pd
 
-ADJACENCY_DIR = 'Adjacency_Matrices'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ADJACENCY_DIR = os.path.join(SCRIPT_DIR, 'Adjacency_Matrices')
 SONG_FILES = [
     'all_too_well.csv', 'baby.csv', 'yellow.csv',
     'story_of_my_life.csv', 'hey_soul_sister.csv', 'riptide.csv'
@@ -27,7 +28,7 @@ def multiply_matrices(m1, m2):
 
 
 preprocessed = [preprocess_and_normalize_matrix(m) for m in matrices]
-output_dir = 'Multiplied_matrices'
+output_dir = os.path.join(SCRIPT_DIR, 'Multiplied_matrices')
 os.makedirs(output_dir, exist_ok=True)
 
 for i in range(len(preprocessed)):

@@ -1,8 +1,10 @@
+import os
 import random
 import pandas as pd
 import numpy as np
 
-ADJACENCY_DIR = 'Adjacency_Matrices'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ADJACENCY_DIR = os.path.join(SCRIPT_DIR, 'Adjacency_Matrices')
 SONG_FILES = [
     'all_too_well.csv', 'baby.csv', 'yellow.csv',
     'story_of_my_life.csv', 'hey_soul_sister.csv', 'riptide.csv'
@@ -19,7 +21,7 @@ CHORD_MATRIX = [
     "AmFC", "AmFG", "AmFF", "AmFAm", "AmAmC", "AmAmG", "AmAmF", "AmAmAm"
 ]
 
-matrices = [pd.read_csv(f'{ADJACENCY_DIR}/{f}', header=None) for f in SONG_FILES]
+matrices = [pd.read_csv(os.path.join(ADJACENCY_DIR, f), header=None) for f in SONG_FILES]
 
 
 def preprocess_matrix(matrix):
@@ -58,4 +60,4 @@ if __name__ == "__main__":
         walk_chords = [CHORD_MATRIX[i - 1] for i in walk_indices]
         print(walk_chords)
 
-    transformed_average.to_csv(f'{ADJACENCY_DIR}/transformed_average_matrix.csv', index=False, header=False)
+    transformed_average.to_csv(os.path.join(ADJACENCY_DIR, 'transformed_average_matrix.csv'), index=False, header=False)

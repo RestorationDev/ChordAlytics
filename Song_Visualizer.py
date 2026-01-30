@@ -1,8 +1,10 @@
+import os
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-TEST_FILE = 'data_generator_test.tsv'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+TEST_FILE = os.path.join(SCRIPT_DIR, 'data_generator_test.tsv')
 
 test_df = pd.read_csv(TEST_FILE, header=None, skiprows=1, delimiter='\t')
 test_df_numeric = test_df.apply(pd.to_numeric, errors='coerce').fillna(0)
